@@ -8,6 +8,8 @@ Encoding: UTF-8
 LazyData: true
 ByteCompile: true
 URL: https://github.com/czeildi/datasetsexperiment
+Depends:
+    R (>= 3.1.0)
 Suggests: 
     roxygen2,
     knitr
