@@ -1,0 +1,5 @@
+^Dockerfile$
+^\.dockerignore$
+^datasetsexperiment\.Rproj$
+^\.Rproj\.user$
+^LICENSE\.md$
