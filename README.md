@@ -12,7 +12,31 @@ devtools::install_github("czeildi/datasetsexperiment")
 
 ## Usage
 
-see `reprex.R`
+see `reprex.R`,
+
+``` r
+datasetsexperiment::print_internal_in_body()
+#> [1] "piece of data saved as both internal and external"
+datasetsexperiment::print_internal_from_argument()
+#> [1] "piece of data saved as both internal and external"
+datasetsexperiment::print_external_in_body()
+#> Error in datasetsexperiment::print_external_in_body(): object 'external_only' not found
+datasetsexperiment::print_external_from_argument()
+#> Error in datasetsexperiment::print_external_from_argument(): object 'external_only' not found
+
+library("datasetsexperiment")
+
+datasetsexperiment::print_internal_in_body()
+#> [1] "piece of data saved as both internal and external"
+datasetsexperiment::print_internal_from_argument()
+#> [1] "piece of data saved as both internal and external"
+datasetsexperiment::print_external_in_body()
+#> [1] "piece of external only data"
+datasetsexperiment::print_external_from_argument()
+#> [1] "piece of external only data"
+```
+
+Created on 2018-06-16 by the [reprex package](http://reprex.tidyverse.org) (v0.2.0).
 
 ## Background
 
@@ -25,7 +49,7 @@ devtools::use_data(external_and_internal, internal = TRUE)
 
 If you only save your data as external data:
 
-You get a `R CMD check` note about undefined global variables: `external_only`. This you can eliminate with 
+You get a `R CMD check` note `about undefined global variables: external_only`. This you can eliminate with 
 ```r 
 utils::globalVariables("external_only")
 ``` 
