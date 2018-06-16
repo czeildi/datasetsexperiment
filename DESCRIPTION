@@ -10,7 +10,8 @@ ByteCompile: true
 URL: https://github.com/czeildi/datasetsexperiment
 Depends:
     R (>= 3.1.0)
-Suggests: 
+Suggests:
     roxygen2,
-    knitr
+    knitr,
+    testthat
 RoxygenNote: 6.0.1
