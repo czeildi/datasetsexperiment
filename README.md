@@ -59,7 +59,7 @@ but then you only conceal the problem.
 
 If your package is loaded, everything looks fine but if someone want's to use your function without loading your package: 
 ```r 
-datasetsexperiment::function_using_externalonly_data
+datasetsexperiment::print_external_in_body()
 ```
 it will fail with `object 'external_only' not found`. This error will be probably frustrating as your user can see the data just fine with 
 ```r 
