@@ -1,20 +1,15 @@
 # datasetsexperiment
 
-The goal of datasetsexperiment is to ...
+The goal of datasetsexperiment is to be a minimal R package to test usage of external and internal data in R packages
 
 ## Installation
 
-You can install the released version of datasetsexperiment from [CRAN](https://CRAN.R-project.org) with:
+You can install the dev version of datasetsexperiment from Github
 
 ``` r
-install.packages("datasetsexperiment")
+devtools::install_github("czeildi/datasetsexperiment")
 ```
 
-## Example
+## Usage
 
-This is a basic example which shows you how to solve a common problem:
-
-``` r
-## basic example code
-```
-
+see `reprex.R`
